@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[Initialze the chromebrowser]]>
+    </line>
+    <line>
+      <![CDATA[Open appdirect website]]>
+    </line>
+    <line>
+      <![CDATA[signup page opens]]>
+    </line>
+    <line>
+      <![CDATA[Enter mailid]]>
+    </line>
+    <line>
+      <![CDATA[Registration Completed]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="23526" started-at="2017-04-10T09:12:48Z" finished-at="2017-04-10T09:13:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="23526" started-at="2017-04-10T09:12:48Z" finished-at="2017-04-10T09:13:12Z">
+      <class name="com.esha.test1.TestClass">
+        <test-method status="PASS" signature="start()[pri:0, instance:com.esha.test1.TestClass@1bce4f0a]" name="start" duration-ms="1232" started-at="2017-04-10T14:42:48Z" finished-at="2017-04-10T14:42:49Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Initialze the chromebrowser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="verifyHomepage()[pri:0, instance:com.esha.test1.TestClass@1bce4f0a]" name="verifyHomepage" duration-ms="12317" started-at="2017-04-10T14:42:49Z" depends-on-methods="com.esha.test1.TestClass.start" finished-at="2017-04-10T14:43:02Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Open appdirect website]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyHomepage -->
+        <test-method status="PASS" signature="verifyloginpage()[pri:0, instance:com.esha.test1.TestClass@1bce4f0a]" name="verifyloginpage" duration-ms="8487" started-at="2017-04-10T14:43:02Z" depends-on-methods="com.esha.test1.TestClass.verifyHomepage" finished-at="2017-04-10T14:43:10Z">
+          <reporter-output>
+            <line>
+              <![CDATA[signup page opens]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyloginpage -->
+        <test-method status="PASS" signature="verifySignUpPage()[pri:0, instance:com.esha.test1.TestClass@1bce4f0a]" name="verifySignUpPage" duration-ms="27" started-at="2017-04-10T14:43:10Z" depends-on-methods="com.esha.test1.TestClass.verifyloginpage" finished-at="2017-04-10T14:43:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpPage -->
+        <test-method status="PASS" signature="verifySignup()[pri:0, instance:com.esha.test1.TestClass@1bce4f0a]" name="verifySignup" duration-ms="232" started-at="2017-04-10T14:43:10Z" depends-on-methods="com.esha.test1.TestClass.verifySignUpPage" finished-at="2017-04-10T14:43:10Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Enter mailid]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySignup -->
+        <test-method status="PASS" signature="verifysignuplast()[pri:0, instance:com.esha.test1.TestClass@1bce4f0a]" name="verifysignuplast" duration-ms="1089" started-at="2017-04-10T14:43:10Z" depends-on-methods="com.esha.test1.TestClass.verifySignup" finished-at="2017-04-10T14:43:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Registration Completed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifysignuplast -->
+        <test-method status="PASS" signature="exit()[pri:0, instance:com.esha.test1.TestClass@1bce4f0a]" name="exit" is-config="true" duration-ms="117" started-at="2017-04-10T14:43:11Z" finished-at="2017-04-10T14:43:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+      </class> <!-- com.esha.test1.TestClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
