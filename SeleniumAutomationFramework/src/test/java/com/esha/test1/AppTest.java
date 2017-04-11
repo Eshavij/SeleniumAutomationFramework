@@ -1,5 +1,6 @@
 package com.esha.test1;
 import java.io.IOException;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -9,6 +10,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+/**
+ * Automating the Signup
+ * @author esha
+ *
+ */
 
 public class AppTest{
 	 @Test

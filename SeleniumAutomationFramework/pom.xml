@@ -4,7 +4,7 @@
 
   <groupId>com.appdirectesha.Applications</groupId>
   <artifactId>SeleniumApplication</artifactId>
-  <version>1-SNAPSHOT</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>SeleniumApplication</name>
@@ -15,12 +15,12 @@
   </properties>
 
   <dependencies>
-  <!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
-<dependency>
-    <groupId>org.uncommons</groupId>
-    <artifactId>reportng</artifactId>
-    <version>1.1.4</version>
-</dependency>
+ <!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
+   <dependency>
+      <groupId>org.uncommons</groupId>
+      <artifactId>reportng</artifactId>
+          <version>1.1.4</version>
+       </dependency>
        <dependency>
           <groupId>velocity</groupId>
          <artifactId>velocity</artifactId>
@@ -32,32 +32,37 @@
             <groupId>com.google.inject</groupId>
            <artifactId>guice</artifactId>
            <version>3.0</version>
-           </dependency>
+    </dependency>    
+     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.3.1</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
+    <dependency>
+           <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-firefox-driver</artifactId>
+           <version>3.3.1</version>
+    </dependency>    
+     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-chrome-driver</artifactId>
+        <version>3.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.8</version>
       <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-chrome-driver</artifactId>
-    <version>3.3.1</version>
-</dependency>
- <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>6.11</version>
-</dependency>
-  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>3.3.1</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
-   
-  </dependencies>
+    
+   <dependency>
+     <groupId>junit</groupId>
+     <artifactId>junit</artifactId>
+     <version>3.8.1</version>
+     <scope>test</scope>
+   </dependency>
+ </dependencies>
 </project>

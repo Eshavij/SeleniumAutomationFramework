@@ -1,4 +1,9 @@
 package exceptionhandling;
+/**
+ * No such element exception
+ * @author esha
+ *
+ */
 
 public class NoSuchElement  extends Exception{
 	

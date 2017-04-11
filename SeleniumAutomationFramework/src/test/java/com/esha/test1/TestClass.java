@@ -1,7 +1,7 @@
 package com.esha.test1;
 
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import java.io.IOException;
 
@@ -13,22 +13,28 @@ import com.automation.pages.HomePage;
 import com.automation.pages.LoginPage;
 import com.automation.pages.SignupPage;
 import com.automation.pages.SignupPageChecker;
-import com.automation.pages.SignupPagezz;
+import com.automation.pages.SignupConfirm;
 
 import exceptionhandling.FileNotFound;
 import exceptionhandling.NoSuchElement;
 
+/**
+ * Test Class
+ * @author esha
+ *
+ */
 public class TestClass { 
 	WebDriver driver;
 	LoginPage obj1;
 	
-	@Test
+	@BeforeClass
 	public void start() throws IOException, FileNotFound{
 		Browser b = new Browser();
-		driver = b.startBrowser(b.selectbrowser());
+		String sel = b.selectbrowser();
+		driver = b.startBrowser(sel);
 	}
 	
-	@Test(dependsOnMethods="start")
+	@Test
 	public void verifyHomepage() throws IOException, FileNotFound, NoSuchElement{ 
 		HomePage obj=PageFactory.initElements(driver, HomePage.class);
 			obj.openHomePageUrl()
@@ -63,16 +69,16 @@ public class TestClass {
 	}
 		@Test(dependsOnMethods="verifySignup")
 		public void verifysignuplast() throws IOException{
-			SignupPagezz lastpage= new SignupPagezz(driver);
+			SignupConfirm lastpage= new SignupConfirm(driver);
 			lastpage.waitVisibilityConditionByXpath();
 			lastpage.verifysignup2();
 		}
 
 		
 		
-		@AfterClass
+			@AfterClass
 			public void exit(){
-		driver.close();
+			driver.close();
 				
 			}
 	

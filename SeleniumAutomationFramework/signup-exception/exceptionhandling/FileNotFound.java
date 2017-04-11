@@ -1,4 +1,9 @@
 package exceptionhandling;
+/**
+ * File not found exception
+ * @author esha
+ *
+ */
 
 public class FileNotFound extends Exception {
 
