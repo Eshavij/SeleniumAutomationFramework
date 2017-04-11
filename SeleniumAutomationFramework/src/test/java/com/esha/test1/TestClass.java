@@ -1,19 +1,16 @@
 package com.esha.test1;
 
-import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
 
-import com.automation.pages.Browser;
+import com.automation.browsers.Browser;
 import com.automation.pages.HomePage;
-import com.automation.pages.HomepageChecker;
 import com.automation.pages.LoginPage;
-import com.automation.pages.LoginPageChecker;
 import com.automation.pages.SignupPage;
 import com.automation.pages.SignupPageChecker;
 import com.automation.pages.SignupPagezz;
@@ -26,7 +23,7 @@ public class TestClass {
 	LoginPage obj1;
 	
 	@Test
-	public void start() throws IOException{
+	public void start() throws IOException, FileNotFound{
 		Browser b = new Browser();
 		driver = b.startBrowser(b.selectbrowser());
 	}
@@ -73,9 +70,9 @@ public class TestClass {
 
 		
 		
-		@AfterTest
+		@AfterClass
 			public void exit(){
-//			driver.close();
+		driver.close();
 				
 			}
 	

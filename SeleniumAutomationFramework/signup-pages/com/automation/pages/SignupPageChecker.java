@@ -14,14 +14,14 @@ public class SignupPageChecker {
 		Assert.assertEquals(driver.getTitle(),"Sign Up for AppDirect");
 		return new SignupPageChecker(driver);
 	}
-	/*
+	
 	public  SignupPageChecker signupchecker(){
 	boolean Status 	=driver.findElement(By.xpath("//*[@id='id12']/fieldset/div[2]/div/input")).isDisplayed();
 	Assert.assertTrue( Status);
 	return new SignupPageChecker(driver);
 		
 	}
-	*/
+	
 	
 
 }
